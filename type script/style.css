@@ -1,0 +1,217 @@
+/* 
+
+## Colors
+
+### Primary
+
+- Light Blue: hsl(233, 100%, 69%)
+- Strong Cyan: hsl(171, 66%, 44%)
+
+### Neutral
+
+- Dark Grayish Blue: hsl(210, 10%, 33%)
+- Grayish Blue: hsl(201, 11%, 66%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 18px
+
+### Fonts
+
+- Family: [c](https://fonts.google.com/specimen/Bai+Jamjuree)
+- Weights: 400, 600
+
+*/
+:root {
+  --maincolor: #26bba4;
+  --secondcolor: hsl(233, 100%, 69%);
+}
+body {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 18px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* start header */
+
+.header {
+  background-image: url(img1/bg-header-mobile.png);
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.header-cap h1 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.header .header-cap .btn1 {
+  padding: 20px 45px;
+  margin: 15px 10px;
+  border-radius: 30px;
+  color: white;
+}
+.header .header-cap .IOS {
+  background-color: var(--maincolor);
+}
+
+.header .header-cap .Mac {
+  background-color: var(--secondcolor);
+}
+/* end header */
+
+/* start snippets */
+
+.sec1 .snippute h2 {
+  font-weight: 800;
+}
+
+.sec2 .items 
+{
+    margin: 70px;
+}
+@media screen  and (max-width: 1200px) 
+{
+    .sec2 
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+    }
+    .sec2 .imge img
+    {
+        width: 90%;
+    }
+}
+
+/* end snippets */
+
+
+
+/* start logoes  */
+@media screen and (max-width: 600px) {
+  .logoes {
+    display: flex;
+    flex-direction: column;
+  }
+  .logoes .logo {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 768px) {
+  .logoes {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .logoes .logo {
+    margin: 10px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  .logoes {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+  .logoes {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .logoes .logo {
+    width: 15%;
+  }
+}
+
+/* end logoes  */
+
+
+
+
+/* start IOS-mac */
+
+
+.IOS-Mac h1 {
+    font-size: 40px;
+    font-weight: bold;
+  }
+  
+  .IOS-Mac .header-cap .btn1 {
+    padding: 20px 45px;
+    margin: 15px 10px;
+    border-radius: 30px;
+    color: white;
+  }
+  .IOS-Mac .header-cap .IOS {
+    background-color: var(--maincolor);
+  }
+  
+  .IOS-Mac .header-cap .Mac {
+    background-color: var(--secondcolor);
+  }
+
+
+
+
+/*  end IOS-mac  */
+
+
+/* start footer */
+
+.footer
+{
+    background-color: hsl(201, 11%, 66%);
+
+    /* background-color: aquamarine;  */
+    
+}
+
+.footer i
+{
+    padding: 0px 10px;
+}
+
+@media screen and (min-width:0px) and (max-width:790px) {
+
+    .footer .footer-items
+    {
+        text-align: center;
+    }
+
+    .footer .footer-items .item
+    {
+        margin-bottom: 10px;
+    }
+    
+
+    
+}
+/* end footer */
+
+
+
+
+
+
+
+
+
+
+
+
+
